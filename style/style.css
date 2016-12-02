@@ -144,6 +144,31 @@ article {
 	height: auto;
 }
 
+.nieuw {
+	display: block;
+	width: 30em;
+	height: auto;
+	position: relative;
+	margin-top: -70em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffc917;
+	padding: 1.5em;
+	border: 1.5px solid black;
+}
+
+.nieuw form {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.nieuw a {
+}
+
+.nieuw input {
+	width: 16em;
+}
+
 a:hover {
 	background-color: #F2F2F2;
 }
@@ -215,6 +240,10 @@ form img {
 	flex: 100%;
 }
 
+.nieuw {
+	margin-top: -85em;
+}
+
 }
 
 @media screen and (max-width: 780px) {
@@ -226,6 +255,11 @@ form img {
 .uitgelicht, .account {
 	flex: 100%;
 	padding: 0;
+}
+
+.nieuw {
+	margin-top: -85em;
+	width: 70%;
 }
 
 input[value="Zoek verhalen     >"] {
@@ -267,6 +301,10 @@ container {
 
 .suggesties {
 	height: 30em;
+}
+
+.nieuw {
+	margin-top: -62em;
 }
 
 h1 {
