@@ -3,172 +3,176 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>NS Reisverhalen</title>
+    <title>NS Reisverhalen - Home</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/css/fonts.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-    <div class="banner">
-    </div>
+    <header>
+
+       <article>
+            <a href="index.html">
+                <img src="images/nslogo.svg">
+                <h1>NS Reisverhalen</h1>
+            </a>
+        </article>
+
+    </header>
+
+    <div class="backgroundimage"></div>
 
     <div class="wrapper">
-        
-        <header>
+
+        <section>
+
+            <a href="verrast.html">
+                <h2>Uitgelicht</h2>
+                <p>Nu populair</p>
+
+                <img src="images/bookcoverfeatured.png">
+                <article>
+                    <p>Titel: Verrast</p>
+                    <p>Designer: R. van Dodewaard</p>
+                    <p>Sfeer: Uitbundig</p>
+                    <p>Leestijd: 8 minuten</p>
+                </article>
+            </a>
             
-            <h1>NS Reisverhalen</h1>
+        </section>
+
+        <section>
+            
+            <h1>Bladeren</h1>
+            <p>Selecteer uw gewenste filters en zoek naar verhalen</p>
 
             <form>
-                <input type="search" name="search" label="zoeken" placeholder="zoek verhalen..">
-                <input type="submit" value="Zoeken     >">
-                <a href=""><img src="images/search.png"></a>
+
+                <table>
+
+                    <tr>
+                        <th colspan="4"><h3>Verhaal sfeer</h3></th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="radio" name="sfeer" id="allesfeer" checked>
+                            <label for="allesfeer">Alle sfeerwoorden</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="sfeer" id="positief">
+                            <label for="positief">Positief</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="sfeer" id="negatief">
+                            <label for="negatief">Negatief</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="4"><h3>Leestijd</h3></th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="radio" name="tijd" id="alletijd" checked>
+                            <label for="alletijd">Alle leestijden</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="tijd" id="kort">
+                            <label for="kort">< 10 Minuten</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="tijd" id="lang">
+                            <label for="lang">> 10 Minuten</label>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="3"><h3>Gepubliceerde Datum</h3></th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="radio" name="datum" id="altijd" checked>
+                            <label for="altijd">Altijd</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="datum" id="week">
+                            <label for="week">Deze week</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="datum" id="maand">
+                            <label for="maand">Deze maand</label>
+                        </td>
+                    </tr>
+                    
+                </table>
+            
+                <input type="submit" value="Bladeren     >">
+            
             </form>
 
-        </header>
-  
-        <div class="bladeren">
+        </section>
+
+
+        <section>
             
-            <container class="yellow">
-                <h2>Bladeren</h2>
-                <p>Selecteer uw favoriete genres en zoek naar verhalen</p>
+            <h2>Mijn Reisverhalen</h2>
+            <p>Log in of maak een nieuw account aan</p>
 
-                <form>
-                    <input type="checkbox" name="fictie" value="fictie"> <label for="fictie">Fictie</label><br>
-                    <input type="checkbox" name="non" value="non"> <label for="non">Non-Fictie</label><br>
-                    <input type="checkbox" name="kort" value="kort"> <label for="kort">Kort verhaal</label><br>
-                    <input type="checkbox" name="sfeer" value="sfeer"> <label for="sfeer">Sfeerverhaal</label><br>
-                    <input type="checkbox" name="buitenland" value="buitenland"> <label for="buitenland">Buitenland</label><br>
-                    <input type="submit" value="Zoek verhalen     >">
-                </form>
-            </container>
+            <form>
+                <label for="e-mailadres">E-mailadres</label><br>
+                <input type="text" id="e-mailadres"><br>
 
-        </div>
-        
-        <div class="uitgelicht">
+                <label for="wachtwoord">Wachtwoord</label><br>
+                <input type="password" id="wachtwoord"><br>
             
-            <a href="">
-            	<container>
-                	<h2>Uitgelicht</h2>
-                	<p>Nu populair</p>
+                <p>> Wachtwoord vergeten</p>
+                <p>> Account aanmaken</p>
 
-                	<h3>Toeristische Route</h3>
-                    <img src="images/toeris.png">
-                    <div class="info">
-                        <p>&#9733; &#9733; &#9733; &#9733; &#9734; - 34 Reviews</p>
-                        <p>Auteur: Max J. Molovich</p>
-                        <p>Datum: 7 Juni 2016</p>
-                        <p>Taal: Nederlands</p>
-                        <p>Genre: Sfeerverhaal</p>
-                    </div>
-            	</container>
-            </a>
+                <input type="submit" value="Inloggen     >">
+            </form>
 
-        </div>
+        </section>
 
-        <div class="account">
+
+        <section>
+
+            <h2>Suggesties</h2>
+            <p>Op basis van verhalen die jij bekeken hebt</p>
+
+            <article class="showimg"></article>
             
-            <container class="test">
-                <h2>Mijn Account</h2>
-                <p>Log in of maak een nieuw account aan</p>
+            <article class="showimg"></article>
 
-                <form>
-                    <input type="text" name="e-mailadres" label="e-mailadres" placeholder="e-mailadres"><br>
-                    <input type="password" name="wachtwoord" label="wachtwoord" placeholder="wachtwoord"><br>
-                    <a href="" class="link"><p>> Wachtwoord vergeten</p></a>
-                    <a href="account.html" class="link"><p>> Account aanmaken</p></a>
-                    <input type="submit" value="Inloggen     >">
-                </form>
-            </container>
+            <article class="showimg"></article>
 
-        </div>
+        </section>
 
-        <div class="suggesties">
+    </div> 
 
-            <container class="consugg">
-                <h2>Suggesties</h2>
-                <p>Op basis van verhalen die jij bekeken hebt</p>
+    <section class="hideaccount">
 
-                <div class="flexsugg">
-                    <a href=""><article>
-                        <h3>Toeristische Route</h3>
-                            <img src="images/toeris.png">
-                            <div class="info">
-                                <p>&#9733; &#9733; &#9733; &#9733; &#9734; - 34 Reviews</p>
-                                <p>Auteur: Max J. Molovich</p>
-                                <p>Datum: 7 Juni 2016</p>
-                                <p>Taal: Nederlands</p>
-                                <p>Genre: Sfeerverhaal</p>
-                            </div>
-                    </article></a>
+        <h2>Account aanmaken</h2>
+        <p>Vul uw e-mailadres in en kies een wachtwoord</p>
 
-                    <a href=""><article>
-                        <h3>Toeristische Route</h3>
-                            <img src="images/toeris.png">
-                            <div class="info">
-                                <p>&#9733; &#9733; &#9733; &#9733; &#9734; - 34 Reviews</p>
-                                <p>Auteur: Max J. Molovich</p>
-                                <p>Datum: 7 Juni 2016</p>
-                                <p>Taal: Nederlands</p>
-                                <p>Genre: Sfeerverhaal</p>
-                            </div>
-                    </article></a>
+        <form action="javascript:accountaanmaken()">
+            <label for="e-mailadres">E-mailadres</label><br>
+            <input type="text" id="e-mailadres"><br>
 
-                    <a href=""><article>
-                        <h3>Toeristische Route</h3>
-                            <img src="images/toeris.png">
-                            <div class="info">
-                                <p>&#9733; &#9733; &#9733; &#9733; &#9734; - 34 Reviews</p>
-                                <p>Auteur: Max J. Molovich</p>
-                                <p>Datum: 7 Juni 2016</p>
-                                <p>Taal: Nederlands</p>
-                                <p>Genre: Sfeerverhaal</p>
-                            </div>
-                    </article></a>
+            <label for="wachtwoord">Wachtwoord</label><br>
+            <input type="password" id="wachtwoord"><br>
+            
+            <input type="submit" value="Account aanmaken     >">
+            <input type="submit" value="Annuleren">
+        </form>
 
-                    <a href=""><article>
-                        <h3>Toeristische Route</h3>
-                            <img src="images/toeris.png">
-                            <div class="info">
-                                <p>&#9733; &#9733; &#9733; &#9733; &#9734; - 34 Reviews</p>
-                                <p>Auteur: Max J. Molovich</p>
-                                <p>Datum: 7 Juni 2016</p>
-                                <p>Taal: Nederlands</p>
-                                <p>Genre: Sfeerverhaal</p>
-                            </div>
-                    </article></a>
+    </section>
 
-                    <a href=""><article>
-                        <h3>Toeristische Route</h3>
-                            <img src="images/toeris.png">
-                            <div class="info">
-                                <p>&#9733; &#9733; &#9733; &#9733; &#9734; - 34 Reviews</p>
-                                <p>Auteur: Max J. Molovich</p>
-                                <p>Datum: 7 Juni 2016</p>
-                                <p>Taal: Nederlands</p>
-                                <p>Genre: Sfeerverhaal</p>
-                            </div>
-                    </article></a>
-
-                    <a href=""><article>
-                        <h3>Toeristische Route</h3>
-                            <img src="images/toeris.png">
-                            <div class="info">
-                                <p>&#9733; &#9733; &#9733; &#9733; &#9734; - 34 Reviews</p>
-                                <p>Auteur: Max J. Molovich</p>
-                                <p>Datum: 7 Juni 2016</p>
-                                <p>Taal: Nederlands</p>
-                                <p>Genre: Sfeerverhaal</p>
-                            </div>
-                    </article></a>
-                </div>
-
-                <a href="" class="link"><p>> Meer suggesties</p></a>
-
-            </container>
-
-        </div>
-</div>
+    <script type="text/javascript" src="scripts/interactions.js"></script> 
 
 </body>
 

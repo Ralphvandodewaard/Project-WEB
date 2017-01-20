@@ -1,82 +1,87 @@
-body, h1, h2, p {
+body, h1, h2, h3, p {
 	margin: 0;
 	padding: 0;
+
 }
 
 body {
-	font-family: Segoe UI;
+	font-family: Segoe UI, 'segoeui', open sans;
+	color: #060922;
 	background-color: #e6e6e9;
 }
 
+.backgroundimage {
+	width: 100%;
+	height: 30em;
+	background: url("../images/train.jpg") no-repeat center center scroll;
+	background-size: cover;
+}
+
 .wrapper {
-	margin-top: -30em;
-  	display: flex;
-  	flex-flow: row wrap;
-  	width: 70em;
-  	margin-left: auto;
-  	margin-right: auto;
-}
-
-header {
-	order: 0;
-}
-
-.bladeren {
-	order: 1;
-}
-
-.uitgelicht {
-	order: 2;
-}
-
-.account {
-	order: 3;
-}
-
-.suggesties {
-	order: 4;
-}
-
-header, .bladeren, .uitgelicht, .account, .suggesties {
- 	flex: 1 100%;
-}
-
-.uitgelicht {
-	padding-left: 2em;
-	padding-right: 2em;
-}
-
-header {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 20em;
- 	background-color: #fff;
- 	padding: 1em 1.5em 1em 1.5em;
- 	box-shadow: 0 .125em 0 0 rgba(7,7,33,.15);
+  	flex-flow: row wrap;
+  	width: 74em;
+	margin: 2em auto 1em auto;
 }
 
-.bladeren, .uitgelicht, .account {
-	flex: 1;
-	height: auto;
-	width: 14em;
+.backgroundimage + .wrapper {
+  	margin: -28em auto 1em auto;
 }
 
-container {
-	display: block;
+header {
+	width: 100%;
+	height: 4em;
 	background-color: #fff;
-	height: 17em;
+}
+
+header article {
+	width: 70em;
+  	margin: 0 auto 0 auto;
+  	padding: 0.6em 1.5em 0.6em 1.5em;
+}
+
+header img {
+	display: inline-block;
+	height: 1.5em;
+	width: auto;
+	margin: 0 0.5em 0 0;
+}
+
+section {
+	flex: auto;
+	width: 14em;
+	margin: 0.5em;
 	padding: 1.5em;
-	margin-bottom: 2em;
+	background-color: #fff;
 	box-shadow: 0 .125em 0 0 rgba(7,7,33,.15);
 }
 
-.yellow {
-	background-color: #ffc917;
+section:first-of-type {
+	flex: 0.4;
+	background-color: rgba(0, 48, 130, .7);
+	margin-bottom: 2.5em;
+	color: #fff;
 }
 
-h1, h2, h3 {
+section:nth-of-type(2) {
+	background-color: #ffc917;
+	flex: 1 100%;
+}
+
+section article {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 1em;
+}
+
+div + section:first-of-type {
+	background-color: rgba(0, 48, 130, 1);
+}
+
+h1, 
+h2, 
+h3 {
+	display: inline-block;
 	color: #003082;
 	font-size: 2em;
 	font-weight: normal;
@@ -86,104 +91,70 @@ h2 {
 	font-size: 1.5em;
 }
 
-h2 + p {
-	font-style: italic;
-	margin-bottom: 1em;
-}
-
 h3 {
 	font-size: 1.2em;
-	margin-bottom: 0.3em;
-	margin-top: 0;
+	margin: 0 0 0.2em 0;
+}
+
+h1 + p,
+h2 + p {
+	font-style: italic;
+	margin: 0 0 1em 0;
 }
 
 a {
+	color: #060922;
 	text-decoration: none;
-	color: inherit;
 }
 
-.link {
+a h2,
+a p {
+	color: #fff;
+}
+
+table td {
+	width: 12em;
+	height: 1.5em;
+	vertical-align: middle;
+}
+
+table th {
+	height: 3em;
+	vertical-align: bottom;
+	text-align: left;
+	font-weight: normal;
+}
+
+table tr:first-of-type th {
+	height: auto;
+}
+
+form p {
 	color: #0079d3;
+	cursor: pointer;
 }
 
-.link:hover {
+form p:first-of-type {
+	margin: 1em 0 0 0;
+}
+
+form p:hover {
 	color: #003082;
 }
 
-img {
-	display: inline-block;
-	width: 6em;
+form input {
+	margin: 0 0 1em 0;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
 }
 
-.banner {
-	width: 100%;
-	height: 30em;
-	background: url("../images/banner.png") no-repeat center center scroll;
-	background-size: cover;
-}
-
-.info {
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 1em;
-}
-
-article {
-	padding: 0.2em;
-	display: inline-block;
-	margin-bottom: 2em;
-}
-
-.flexsugg {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-}
-
-.consugg {
-	height: auto;
-}
-
-.nieuw {
-	display: block;
-	width: 30em;
-	height: auto;
-	position: relative;
-	margin-top: -70em;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #ffc917;
-	padding: 1.5em;
-	border: 1.5px solid black;
-}
-
-.nieuw form {
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
-
-.nieuw a {
-}
-
-.nieuw input {
-	width: 16em;
-}
-
-a:hover {
-	background-color: #F2F2F2;
-}
-
-input[type=checkbox] {
-	margin-bottom: 0.5em;
-	vertical-align: top;
-	box-sizing: border-box;
-}
-
-input[type=submit] {
-	font-family: Segoe UI;
+form input[type=submit] {
+	font-family: Segoe UI, 'segoeui', open sans;
 	font-size: 1em;
 	color: #fff;
 	background-color: #0079d3;
+	margin: 1em 0 0 0;
 	padding: 0.7em 1em 0.7em 1em;
 	border: 0;
 	border-radius: 0;
@@ -191,140 +162,420 @@ input[type=submit] {
 	cursor: pointer;
 }
 
-input[type=submit]:hover {
-	transition: box-shadow .15s ease-in-out;
+form input[type=submit]:hover {
+	transition: box-shadow .3s;
 	box-shadow: inset 0 -3.125rem 0 #005ca0;
 }
 
-input[type=search], input[type=text], input[type=password] {
-	font-family: Segoe UI;
+form input[type=text],
+form input[type=password] {
+	font-family: Segoe UI, 'segoeui', open sans;
 	font-size: 1em;
-	padding: 0.57em 1em 0.57em 1em;
-	margin-right: 0.5em;
-}
-
-input[type=text], input[type=password] {
-	margin-bottom: 0.5em;
-}
-
-input[value="Inloggen     >"] {
-	margin-top: 0.5em;
-}
-
-input[value="Zoek verhalen     >"] {
-	margin-top: 1.5em;
-}
-
-input[placeholder="gebruikersnaam"] {
-	margin-top: 0.4em;
-}
-
-form img {
-	display: none;
-	height: 2em;
-	width: auto;
-}
-
-@media screen and (max-width: 1150px) {
-
-.wrapper {
-	width: 46em;
-}
-
-.bladeren, .uitgelicht {
- 	flex: auto;
- 	padding-right: 0;
-}
-
-.account {
-	flex: 100%;
-}
-
-.nieuw {
-	margin-top: -85em;
-}
-
-}
-
-@media screen and (max-width: 780px) {
-
-.wrapper {
-	width: 90%;
-}
-
-.uitgelicht, .account {
-	flex: 100%;
-	padding: 0;
-}
-
-.nieuw {
-	margin-top: -85em;
-	width: 70%;
-}
-
-input[value="Zoek verhalen     >"] {
-	margin-top: 2.8em;
-}
-
-input[type=search] {
-	display: none;
-}
-
-input[value="Zoeken     >"] {
-	display: none;
-}
-
-form img {
-	display: inline-block;
-	width: 2em;
-}
-
-}
-
-@media screen and (max-width: 470px) {
-
-.wrapper {
-	margin-top: -20em;
-}
-
-header {
-	margin-bottom: 5em;
-}
-
-container {
-	margin-bottom: 1.5em;
-}
-
-.bladeren {
-	padding-top: 1.5em;
-}
-
-.suggesties {
-	height: 30em;
-}
-
-.nieuw {
-	margin-top: -62em;
-}
-
-h1 {
-	font-size: 1.7em;
-}
-
-input[value="Zoek verhalen     >"], input[value="Inloggen     >"] {
 	width: 100%;
+	margin: 0.5em 0 0.5em 0;
+	padding: 0.57em 1em 0.57em 1em;
+	box-sizing: border-box;
 }
 
-input[value="Zoek verhalen     >"] {
-	margin-top: 1.5em;
+input[type=radio],
+input[type=checkbox] { 
+	display: none; 
 }
 
-.banner {
-	height: 20em;
+input[type=radio] + label:before,
+input[type=checkbox] + label:before {
+	content: "";  
+    display: inline-block;  
+    width: 1.3em;
+    height: 1.3em;
+    color: #848484;
+    margin-right: 0.8em;  
+    background-color: #fff;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .3);
+    vertical-align: top;
+}
+
+input[type=radio]:hover + label:hover:before {
+    content: "\2714";
+    color: #848484;
+    text-align: center;
+    transition: 0.3s;
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2714";
+    color: #003082;
+    background-color: #3ADF00; 
+    text-align: center;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .3);
+    transform: scale(1.2);
+}
+
+input[type=radio]:checked:hover + label:before {
+	color: #003082;
+}
+
+input[type=checkbox] + label:before {
+	content: "Opslaan";
+	width: 5em;
+	height: auto;
+	font-family: Segoe UI, 'segoeui', open sans;
+	font-size: 1em;
+	text-align: center;
+	color: #fff;
+	background-color: #0079d3;
+	margin: 1em 0 0 0;
+	padding: 0.7em 1em 0.7em 1em;
+	box-shadow: inset 0 -.125em 0 #005ca0;
+}
+
+input[type=checkbox]:hover + label:hover:before {
+	transition: box-shadow .3s;
+	box-shadow: inset 0 -3.125rem 0 #005ca0;
+	cursor: pointer;
+}
+
+input[type=checkbox]:checked + label:before {
+	content: "Opgeslagen";
+	background-color: #3ADF00;
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .3);
+    transform: scale(1.05);
+}
+
+input[type=checkbox]:checked:hover + label:before {
+	transition: box-shadow .3s;
+	box-shadow: inset 0 -3.125rem 0 #258C00;
 }
 
 img {
-	width: 5em;
+	width: 30%;
 }
 
+img[src="images/bookcoverfeatured.png"] {
+	height: auto;
+	width: 50%;
 }
+
+.showaccount {
+	position: relative;
+	width: 30em;
+	margin: -40em auto 0 auto;
+	transition: margin 1s;
+}
+
+.showaccount h2 {
+	color: #fff;
+}
+
+.hideaccount {
+	position: relative;
+	width: 30em;
+	margin: -100em auto 0 auto;
+	transition: margin .5s;
+}
+
+.hideaccount h2 {
+	color: #fff;
+}
+
+.showimg {
+	width: 9em;
+	height: 14em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	margin: 0 1em 1em 0;
+	transition: .5s;
+}
+
+.showinfo {
+	width: 9em;
+	height: 12em;
+	color: #fff;
+	background-color: #003082;
+	display: inline-block;
+	margin: 0 1em 1em 0;
+	padding: 1em;
+	transition: 1s;
+}
+
+.showinfo:hover {
+	transform: rotateY(360deg);
+}
+
+.verhaal {
+	margin: 0.5em;
+	padding: 1.5em 15em 1.5em 15em;
+	background: url('../images/verrastbackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.verhaal h1 {
+	font-size: 8em;
+	font-family: 'lasenter';
+	color: #58D3F7;
+	margin: 0.5em 0 0.5em 0;
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #58D3F7 , 0 0 70px #58D3F7 , 0 0 80px #58D3F7 , 0 0 100px #58D3F7;
+}
+
+.verhaal p:first-of-type,
+.verhaal p {
+	color: #fff;
+	font-size: 1.3em;
+	font-style: normal;
+	margin: 0 0 1em 0;
+}
+
+.verhaal span {
+	font-size: 1.8em;
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #FE2E2E , 0 0 70px #FE2E2E , 0 0 80px #FE2E2E , 0 0 100px #FE2E2E;
+}
+
+.verhaal p:nth-of-type(2) span {
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #40FF00 , 0 0 70px #40FF00 , 0 0 80px #40FF00 , 0 0 100px #40FF00;
+}
+
+.verhaal p:nth-of-type(3) span {
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #CC2EFA , 0 0 70px #CC2EFA , 0 0 80px #CC2EFA , 0 0 100px #CC2EFA;
+}
+
+.verhaal p:nth-of-type(4) span {
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #FF8000 , 0 0 70px #FF8000 , 0 0 80px #FF8000 , 0 0 100px #FF8000;
+}
+
+#hongerwinter {
+	background: url('../images/hongerbackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#hongerwinter h1 {
+	font-size: 5em;
+	font-family: 'jaspers';
+	text-shadow: none;
+	color: #BDBDBD;
+}
+
+#essentie {
+	background: none;
+	background-color: #fff;
+	font-family: 'ptserif';
+}
+
+#essentie h1 {
+	font-size: 5em;
+	font-family: 'ptserif';
+	text-shadow: none;
+	color: #000;
+}
+
+#essentie p:first-of-type,
+#essentie p:nth-of-type(2),
+#essentie p:nth-of-type(3),
+#essentie p:nth-of-type(4) {
+	color: #F2F2F2;
+	text-decoration: line-through;
+}
+
+#essentie + section {
+	background: none;
+	box-shadow: none;
+	position: relative;
+	margin-top: -70em;
+}
+
+#essentie + section p {
+	color: #000;
+	margin-bottom: 10em;
+}
+
+#essentie + section p:last-of-type {
+	margin-bottom: 1em;
+}
+
+
+@media screen and (max-width: 76em) {
+
+	.wrapper {
+		width: 48em;
+	}
+
+	header article {
+		width: 44em;
+	}
+
+	section:first-of-type {
+		flex: 0.7;
+	}
+
+	section:last-of-type {
+		flex: 1 100%;
+	}
+
+	.hideaccount {
+		margin: -130em auto 0 auto;
+	}
+
+	.showaccount {
+		margin: -48em auto 0 auto;
+	}
+
+	.verhaal {
+		padding: 1.5em 8em 1.5em 8em;
+	}
+
+	.verhaal h1 {
+		font-size: 6em;
+	}
+
+	.verhaal p:first-of-type,
+	.verhaal p {
+		font-size: 1.2em;
+	}
+
+	.verhaal span {
+		font-size: 1.7em;
+	}
+
+	#hongerwinter h1 {
+		font-size: 4em;
+	}
+
+	#essentie h1 {
+		font-size: 4em;
+	}
+
+	#essentie + section {
+		margin-top: -80.4em;
+	}
+
+	#essentie + section p {
+		margin-bottom: 13em;
+	}
+
+}
+
+@media screen and (max-width: 50em) {
+
+	.wrapper {
+		width: 95%;
+	}
+
+	header article {
+		width: 88%;
+	}
+
+	section {
+		flex: 1 100%;
+	}
+
+	section:first-of-type {
+		flex: 1 100%;
+	}
+
+	input[type=submit] {
+		width: 100%;
+	}
+
+	.hideaccount {
+		width: 50%;
+		margin: -150em auto 0 auto;
+	}
+
+	.showaccount {
+		width: 50%;
+		margin: -49.5em auto 0 auto;
+	}
+
+	.verhaal h1 {
+		font-size: 5em;
+	}
+
+	.verhaal p:first-of-type,
+	.verhaal p {
+		font-size: 1.1em;
+	}
+
+	.verhaal span {
+		font-size: 1.6em;
+	}
+
+	#hongerwinter h1 {
+		font-size: 3em;
+	}
+
+	#essentie h1 {
+		font-size: 3em;
+	}
+
+	#essentie + section {
+		margin-top: -73.3em;
+	}
+
+	#essentie + section p {
+		margin-bottom: 10em;
+	}
+}
+
+@media screen and (max-width: 40em) {
+
+	body {
+		font-size: 0.9em;
+	}
+
+	.backgroundimage {
+		height: 25em;
+	}
+
+	.backgroundimage + .wrapper {
+  		margin: -23em auto 1em auto;
+	}
+
+	img + article p {
+		display: none;
+	}
+
+	table td {
+		vertical-align: top;
+	}
+
+	.showimg {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.showinfo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hideaccount {
+		width: 70%;
+		margin: -170em auto 0 auto;
+	}
+
+	.showaccount {
+		width: 70%;
+		margin: -78em auto 0 auto;
+	}
+
+	.verhaal {
+		padding: 1.5em 3em 1.5em 3em;
+	}
+
+	.verhaal h1 {
+		font-size: 4em;
+	}
+
+	#hongerwinter h1 {
+		font-size: 2em;
+	}
+
+	#essentie h1 {
+		font-size: 2em;
+	}
+
+} 

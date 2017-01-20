@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'lasenter';
+	src: url('../font-files/LasEnter.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'jaspers';
+	src: url('../font-files/JaspersHandwriting.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'ptserif';
+	src: url('../font-files/PTF55F.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'segoeui';
+	src: url('../font-files/segoeui.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal; 
+}
